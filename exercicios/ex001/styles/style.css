@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(105, 105, 171);
+    font: normal 1.2em Arial, Helvetica, sans-serif;
+
+    padding: 20px 10px 0px 10px;
+}
+
+main {
+    background-color: black;
+    color: white;
+
+    max-width: 600px;
+    padding: 10px;
+    margin: auto;
+
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.411);
+}
+
+h1 {
+    color: rgb(255, 212, 22);
+}
