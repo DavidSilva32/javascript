@@ -3,6 +3,8 @@
 :root {
     --cor01: #6969ab;
     --cor02: #ffd416;
+
+    --fonte1: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -11,9 +13,10 @@
 }
 
 body {
-    background-color: var(--cor01);
-    font: normal 1.2em Arial, Helvetica, sans-serif;
+    background: var(--cor01) url('imagens/espaço.jpg') no-repeat center center fixed;
+    font: normal 1.2em var(--fonte1);
 
+    height: 96vh;
     padding: 20px 10px 0px 10px;
 }
 
