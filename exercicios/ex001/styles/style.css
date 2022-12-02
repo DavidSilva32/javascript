@@ -1,12 +1,17 @@
 @charset "UTF-8";
 
+:root {
+    --cor01: #6969ab;
+    --cor02: #ffd416;
+}
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
 body {
-    background-color: rgb(105, 105, 171);
+    background-color: var(--cor01);
     font: normal 1.2em Arial, Helvetica, sans-serif;
 
     padding: 20px 10px 0px 10px;
@@ -25,5 +30,5 @@ main {
 }
 
 h1 {
-    color: rgb(255, 212, 22);
+    color: var(--cor02);
 }
