@@ -13,10 +13,9 @@
 }
 
 body {
-    background: var(--cor01) url('imagens/espaço.jpg') no-repeat center center fixed;
+    background-color: var(--cor01);
     font: normal 1.2em var(--fonte1);
 
-    height: 96vh;
     padding: 20px 10px 0px 10px;
 }
 
@@ -32,6 +31,7 @@ main {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.411);
 }
 
-h1 {
+main > h1 {
     color: var(--cor02);
+    padding: 20px 0px;
 }
