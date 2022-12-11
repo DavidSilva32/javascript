@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+:root {
+    --cor01: #014040;
+    --cor02: #03A678;
+    --cor03: #F27405;
+    --cor04: #731702;
+
+    --fonte1: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: linear-gradient(to top, var(--cor01), var(--cor02));
+    font: normal 1.2em var(--fonte1);
+
+    height: 97vh;
+    padding: 20px 10px 0px 10px;
+}
+
+main {
+    background-color: black;
+    color: white;
+
+    max-width: 400px;
+    min-width: 230px;
+    min-height: 400px;
+    padding: 10px 20px;
+    margin: auto;
+
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.411);
+}
+
+main > h1 {
+    color: var(--cor03);
+    padding: 20px 0px;
+}
+
+main > input {
+    font: normal 1em var(--fonte1);
+    width: 100px;
+}
+
+#res {
+    padding-top: 20px; 
+}
