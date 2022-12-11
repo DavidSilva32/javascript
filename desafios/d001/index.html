@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagens</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1>Desafio das Mensagens</h1>
+    <section>
+        <div id="box1"><strong>Botão 1</strong></div>
+        <div id="box2"><strong>Botão 2</strong></div>
+        <div id="box3"><strong>Botão 3</strong></div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+        // FIRST BOX
+        var b1 = window.document.getElementById('box1')
+        b1.addEventListener('click', clicar1)
+        b1.addEventListener('mouseenter', entrar1)
+        b1.addEventListener('mouseout', sair1)
+
+        // SECOND BOX
+        var b2 = window.document.getElementById('box2')
+        b2.addEventListener('click', clicar2)
+        b2.addEventListener('mouseenter', entrar2)
+        b2.addEventListener('mouseout', sair2)
+
+        // THIRD BOX
+        var b3 = window.document.getElementById('box3')
+        b3.addEventListener('click', clicar3)
+        b3.addEventListener('mouseenter', entrar3)
+        b3.addEventListener('mouseout', sair3)
+
+        function clicar1() {
+            window.alert('Você clicou no 1° botão!')
+        }
+
+        function clicar2() {
+            window.alert('Você clicou no 2° botão!')
+        }
+
+        function clicar3() {
+            window.alert('Você clicou no 3° botão')
+        }
+
+        function entrar1() {
+            b1.style.background = 'gray'
+        }
+
+        function entrar2() {
+            b2.style.background = 'gray'
+        }
+
+        function entrar3() {
+            b3.style.background = 'gray'
+        }
+
+        function sair1() {
+            b1.style.background = 'lightgray'
+        }
+
+        function sair2() {
+            b2.style.background = 'lightgray'
+        }
+
+        function sair3() {
+            b3.style.background = 'lightgray'
+        }
+    </script>
+</body>
+</html>
