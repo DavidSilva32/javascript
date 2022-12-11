@@ -5,7 +5,7 @@ body {
 
 }
 
-section > div {
+#box {
     font: normal 1em Arial, Helvetica, sans-serif;
     background-color: lightgray;
 
