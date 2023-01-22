@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antes e Depois</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <h1>Antes e Depois</h1>
+    <div id="box" onclick="Click()">
+        Antecessor e Sucessor
+    </div>
+    
+    <script>
+        function Click() {
+            var n1 = Number(window.prompt('Digite um número inteiro qualquer'))
+            window.alert(`Antes de ${n1}, temos o número ${n1-=1}.
+Depois de ${n1+=1}, temos o número ${n1+=1}`)
+        }
+    </script>
+</body>
+</html>
