@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País de Origem</title>
+</head>
+<body>
+    <h1>País de Origem</h1>
+    <fieldset>
+        <legend>Nacionalidade</legend>
+        <form action="" method="get">
+        <label for="pais">Sua nação:</label>
+        <input type="text" name="pais" id="pais" required>
+        <input type="button" value="Verificar" onclick="verificar()">
+        <input type="reset" value="Limpar">
+        </form>
+    </fieldset>
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verificar() {
+            var pais = window.document.querySelector('input#pais')
+            var res = window.document.querySelector('div#res')
+            var nac = String(pais.value)
+            res.innerHTML = `<p>Vivendo em <strong>${nac}</strong></p>`
+            if (nac == 'Brasil') {
+                res.innerHTML += 'Você é Brasileiro!'
+            } else {
+                res.innerHTML += 'Você é estrangeiro!'
+            }
+        }
+    </script>
+</body>
+</html>
