@@ -28,6 +28,17 @@ section {
     margin: 15px auto;
 }
 
+div {
+    padding: 8px;
+    text-align: center;
+}
+
+#imagem {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
 footer {
     color: white;
     text-align: center;
