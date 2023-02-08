@@ -28,6 +28,16 @@ section {
     margin: 15px auto;
 }
 
+section > form > p {
+    margin-bottom: 20px;
+}
+
+div#res img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
 footer {
     color: white;
     text-align: center;
