@@ -1,19 +1,32 @@
-function clicar() {
-    let inicio = document.getElementById('inicio')
-    let fim = document.getElementById('fim')
-    let passo = document.getElementById('passo')
-    let n1 = Number(inicio.value)
-    let n2 = Number(fim.value)
-    let n3 =  Number(passo.value)
+function contar() {
+    let ini = document.getElementById('txti')
+    let fim = document.getElementById('txtf')
+    let passo = document.getElementById('txtp')
     let res = document.getElementById('res')
-    
-    if (n3 -= 0) {
-        window.alert('ERRO')
+
+    if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
+        window.alert('[ERRO] Faltam dados!')
+        res.innerHTML = 'Impossível contar!'
     } else {
-        while (n1<=n2) {
-            res.innerHTML = 'Contando:'
-            res.appendChild = `oi ${n1}`
-            n1 =  n1 + n3
+        res.innerHTML = 'Contando:<br>'
+        let i = Number(ini.value)
+        let f = Number(fim.value)
+        let p = Number(passo.value)
+        if (p <= 0) {
+            window.alert('Passo inválido! Considerando PASSO 1')
+            p = 1
         }
+        if (i < f) {
+            // Contagem crescente
+            for (let c = i;c <= f;c += p) {
+                res.innerHTML += ` ${c} \u{1F449}` 
+            }
+        } else {
+            // Conatgem decrescente
+            for (let c = i;c >= f;c -= p) {
+                res.innerHTML += ` ${c} \u{1F449}`
+            }
+        }
+        res.innerHTML += '\u{1F3C1}'
     }    
 }    

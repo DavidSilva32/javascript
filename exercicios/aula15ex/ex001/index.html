@@ -13,24 +13,24 @@
     </header>
 
     <section>
-        <div>
+        <div id="dados">
             <p>
                 <label for="inicio">Inicio:</label>
-                <input type="number" name="inicio" id="inicio">
+                <input type="number" name="inicio" id="txti">
             </p>
 
             <p>
                 <label for="fim">Fim:</label>
-                <input type="number" name="fim" id="fim" required>
+                <input type="number" name="fim" id="txtf" required>
             </p>
 
             <p>
                 <label for="passo">Passo:</label>
-                <input type="number" name="passo" id="passo" required>
+                <input type="number" name="passo" id="txtp" required>
             </p>
 
             <p>
-                <input id="button" onclick="clicar()" type="button" value="Contar">
+                <input id="button" onclick="contar()" type="button" value="Contar">
             </p>
         </div>
         <div id="res">
