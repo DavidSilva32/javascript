@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/* Mobile First */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(70, 142, 236);
+    margin: 0px 5vw;
+}
+
+header {
+    color: white;
+    margin-top: 15px;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    max-width: 500px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.226);
+    margin: 15px auto;
+}
+
+div > p {
+    padding-bottom: 20px;
+}
+
+#button {
+    width: 80px;
+    height: 30px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
