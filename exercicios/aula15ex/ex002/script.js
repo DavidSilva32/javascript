@@ -1,14 +1,16 @@
 function tabuada() {
-    let tab = document.getElementById('tab')
-    let res = document.getElementById('txtb')
-
-    if (tab.value.length == 0) {
-        alert('Por favor digite um número!')
+    let num = document.getElementById('txtn')
+    let tab = document.getElementById('seltab')
+    if (num.value.length == 0) {
+        alert('Por favor, digite um número!')
     } else {
-        let t = Number(tab.value)
+        let n = Number(num.value)
+        tab.innerHTML = ''
         for (let c = 1;c <= 10;c++) {
-            let tot = t * c
-            res.innerHTML += `${t} X ${c} = ${tot}`
+            let item = document.createElement('option')
+            item.text = `${n} X ${c} = ${n*c}`
+            item.value = `tab${c}`
+            tab.appendChild(item)
         }
     }
 }
