@@ -28,6 +28,15 @@ section {
     margin: 15px auto;
 }
 
+select#txb {
+    width: 150px;
+    margin: 5px 0px;
+}
+
+div#res > p {
+    padding-top: 10px;
+}
+
 footer {
     color: white;
     text-align: center;
