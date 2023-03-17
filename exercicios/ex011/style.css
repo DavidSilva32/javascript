@@ -19,3 +19,7 @@ button {
     padding: 30px;
     cursor: pointer;
 }
+
+strong {
+    color: red;
+}
