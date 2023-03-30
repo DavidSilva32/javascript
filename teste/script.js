@@ -1,19 +1,10 @@
-let index = 0
-
-while (index < 10) {
-    console.log(index)
-    // index = index + 1
-    // index += 1
-
-    // Mesma coisa que acima
-    index++
+class Person {
+    constructor(firstName, lastName, age) {
+        this.firstName = firstName
+        this.lastName = lastName
+        this.age = age
+    }
 }
 
-const person = {
-    name: 'Jane',
-    age: '21'
-}
-
-for (property in person) {
-    console.log(person[property])
-}
+let person = new Person('David', 'Silva', 24)
+console.log(person)
